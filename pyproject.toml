@@ -5,9 +5,9 @@ description = "test"
 authors = ["Fraol Megersa <fraolbacha111@gmail.com>"]
 readme = "README.md"
 packages = [{ include = "test", from = "src" }]
-python = "^3.12"
 
 [tool.poetry.dependencies]
+python = "^3.12"
 httpx = ">=0.28.1,<0.29.0"
 fastapi = ">=0.116.1,<0.117.0"
 uvicorn = { extras = ["standard"], version = ">=0.27.1,<0.28.0" }
@@ -16,7 +16,6 @@ pydantic = ">=2.11.7,<3.0.0"
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
-
 
 [tool.poetry.scripts]
 start = "uvicorn src.main:app --host=0.0.0.0 --port=8000"
