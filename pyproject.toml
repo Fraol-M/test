@@ -1,0 +1,23 @@
+[project]
+name = "test"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Fraol Megersa",email = "fraolbacha111@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "httpx (>=0.28.1,<0.29.0)",
+    "fastapi (>=0.116.1,<0.117.0)",
+    "uvicorn[standard] (>=0.27.1,<0.28.0)",
+    "pydantic (>=2.11.7,<3.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "test", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
